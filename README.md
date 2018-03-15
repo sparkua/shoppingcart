@@ -1,9 +1,10 @@
 # Shopping Cart
-Session based Shopping Cart sample exercise application
+Spring Boot Session based Shopping Cart exercise application
 
 PCF link:
 https://cf-shoppingcart-kind-gecko.cfapps.io
 
 Postman test:
-./Shopping Cart API Test.postman_collection.json
+./Shopping_Cart_API_Test.postman_collection.json
 
+Unit testing TBD
