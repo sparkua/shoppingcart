@@ -10,6 +10,8 @@ import java.util.List;
 
 /**
  * Created by Spark on 3/14/18.
+ *
+ * Product service with predefined products
  */
 @Service
 public class ProductService {

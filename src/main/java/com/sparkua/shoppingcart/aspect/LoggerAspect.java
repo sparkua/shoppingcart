@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * Created by Spark on 3/15/18.
+ *
+ * Aspect Logger handler
  */
 @Aspect
 @Component

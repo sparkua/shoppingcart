@@ -4,10 +4,11 @@ import java.util.*;
 
 /**
  * Created by Spark on 3/15/18.
+ *
+ * Shopping cart model
  */
 public class ShoppingCart {
 
-    //private Map<Product, Integer> items;
     private List<CartItem> items;
     private String status;
     private Date createdDate;

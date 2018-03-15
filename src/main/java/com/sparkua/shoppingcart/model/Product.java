@@ -3,10 +3,11 @@ package com.sparkua.shoppingcart.model;
 import org.hibernate.validator.constraints.Length;
 
 import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.Min;
 
 /**
  * Created by Spark on 3/15/18.
+ *
+ * Product model
  */
 public class Product {
 

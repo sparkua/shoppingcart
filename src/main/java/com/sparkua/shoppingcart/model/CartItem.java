@@ -2,6 +2,8 @@ package com.sparkua.shoppingcart.model;
 
 /**
  * Created by Spark on 3/15/18.
+ *
+ * Cart item model
  */
 public class CartItem {
 

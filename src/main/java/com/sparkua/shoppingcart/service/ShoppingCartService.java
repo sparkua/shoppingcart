@@ -12,6 +12,8 @@ import java.util.*;
 
 /**
  * Created by Spark on 3/14/18.
+ *
+ * Shopping cart service (session based)
  */
 @Service
 @Scope(value = WebApplicationContext.SCOPE_SESSION, proxyMode = ScopedProxyMode.TARGET_CLASS)
@@ -48,11 +50,6 @@ public class ShoppingCartService {
         return shoppingCart;
     }
 
-//    public ShoppingCart updateProduct(ShoppingCart shoppingCart, Long id){
-//
-//        return shoppingCart;
-//    }
-
     public void deleteCartItemByProduct(Product product){
         deleteCartItem(shoppingCart.getCartItembyProduct(product));
     }
@@ -64,7 +61,7 @@ public class ShoppingCartService {
     }
 
     public void clearShoppingCart(){
-
+        shoppingCart = new ShoppingCart();
     }
 
 }
