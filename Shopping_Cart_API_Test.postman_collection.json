@@ -1,0 +1,213 @@
+{
+	"info": {
+		"name": "Shopping Cart API Test",
+		"_postman_id": "e882c5a0-a8fe-45a6-811c-f54b460cd31f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List of products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/product",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Return product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/product/1",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"product",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Return product by id - No product found error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/product/11",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"product",
+						"11"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Return products by type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/product?type=Laptop",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"product"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "Laptop",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List of items in cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/cart",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product to cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/cart/1/2",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"1",
+						"2"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Return Item by product id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/cart?productId=3",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart"
+					],
+					"query": [
+						{
+							"key": "productId",
+							"value": "3",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item from cart by product id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://cf-shoppingcart-kind-gecko.cfapps.io/api/cart/1",
+					"protocol": "https",
+					"host": [
+						"cf-shoppingcart-kind-gecko",
+						"cfapps",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
