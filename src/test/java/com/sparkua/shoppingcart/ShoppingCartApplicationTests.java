@@ -1,8 +1,11 @@
 package com.sparkua.shoppingcart;
 
 import com.sparkua.shoppingcart.controller.ProductController;
+import com.sparkua.shoppingcart.controller.ShoppingCartController;
+import com.sparkua.shoppingcart.model.CartItem;
 import com.sparkua.shoppingcart.model.Product;
 import com.sparkua.shoppingcart.service.ProductService;
+import com.sparkua.shoppingcart.service.ShoppingCartService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -100,4 +103,5 @@ public class ShoppingCartApplicationTests {
         verify(productService, times(1)).findAll();
         verifyNoMoreInteractions(productService);
     }
+
 }

@@ -6,6 +6,8 @@ import com.sparkua.shoppingcart.model.ShoppingCart;
 import com.sparkua.shoppingcart.service.ProductService;
 import com.sparkua.shoppingcart.service.ShoppingCartService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,7 +38,7 @@ public class ShoppingCartController {
     }
 
     @PostMapping
-    public ShoppingCart addProduct(@RequestBody CartItem cartItem) {
+    public ShoppingCart addProduct(CartItem cartItem) {
         return cartService.addProduct(cartItem);
     }
 
